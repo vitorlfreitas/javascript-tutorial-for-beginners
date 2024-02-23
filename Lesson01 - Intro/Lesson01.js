@@ -1,6 +1,8 @@
 "use strict" // Ignore this statement for now
 
-//      *** 1° Read the README file ***
+//      *** Lesson 1 - Primitive Types ***
+
+// Read the README file 
 
 // Variables we usually name in camelCase
 
@@ -32,5 +34,8 @@ word = "New word";
 // CPF = "123456"; // If you run this script, you get an error message "TypeError: Assignment to constant variable."
 
 
+// Others type in JavaScript
 
+let undefinedNull = undefined;
+let nullValue = null;
 

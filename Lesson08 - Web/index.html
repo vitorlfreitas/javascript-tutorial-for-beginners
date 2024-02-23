@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 08 - Web Development</title>
+    <!-- Here we link our CSS files -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<!-- We have our HTML file here -->
+<body>
+    <!-- Classes -->
+    <header class="header">
+        <h1 class="header__title">*** How the Web Development Works ***</h1>
+    </header>
+    <main class="main">
+        <h2 class="main__title">Follow this instructions:</h2>
+        <ol onmouseover="boldingList()" onmouseleave="original()">
+            <li class="li">👉 Install the Node.js</li>
+            <li class="li">👉 Install Live Server</li>
+            <li class="li">👉 Open the Live Server</li>
+            <li class="li">👉 Reload the page</li>
+            <li class="li">👉 Add the script file</li>
+        </ol>
+    </main>
+    <section class="element">
+        <h2>Manipulating this ID Element</h2>
+        <!-- This Element has an ID -->
+        <p id="paragraph" onmouseover="changingAgain()" onmouseleave="displayOriginal()">
+            Text 01
+        </p>
+        <h2>Manipulating this Class Element</h2>
+        <!-- This Element has a class -->
+        <p class="paragraph" onmouseover="changingSecondElement()" onmouseleave="showOriginal()">
+            Text 02
+        </p>
+    </section>
+    <footer></footer>
+
+
+    <!-- Before closing the tag body, we add our script file -->
+    <script src="index.js"></script>
+</body>
+</html>

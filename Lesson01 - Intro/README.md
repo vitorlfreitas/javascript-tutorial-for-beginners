@@ -10,8 +10,11 @@
     JavaScript is Weak!
     What I mean is, JavaScript is not a strongly typed language, such as Java or C#, which means that the compiler cannot know what type is the  data of our variables until we run our script.
 
-## Requirements
-    => Basic HTML and CSS
+## Difference between JavaScript vs ECMAScript
+    JavaScript is a programming language and ECMAScript is a specification responsible for defining standards for JavaScript
+
+## Requirements to lean JavaScript
+    => Know basic concepts of HTML and CSS
     => Download the Node.js 
     => That's all
 
