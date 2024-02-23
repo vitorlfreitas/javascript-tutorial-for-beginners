@@ -38,4 +38,4 @@ word = "New word";
 
 let undefinedNull = undefined;
 let nullValue = null;
-
+let notNumber = NaN;
