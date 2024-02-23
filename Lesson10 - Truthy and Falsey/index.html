@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy or Falsey?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <form id="emailForm" onsubmit="return validateForm()">
+            <h1>Company's Logo</h1>
+            <!-- Insert Email -->
+            <div class="login">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <!-- Insert Password -->
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="check">
+                <input type="checkbox" name="agreements" id="agreements">
+                <label for="agreements">I agree to the terms and conditions...</label>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer></footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

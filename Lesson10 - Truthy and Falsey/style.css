@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right, rgba(255, 87, 196, 0.7) 0%, rgb(130, 68, 255, 0.7) 100%);
+    width: 100vw;
+    height: 100vh;
+
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+header {
+    height: 10%;
+}
+main {
+    height: 80%;
+    max-width: 800px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+form {
+
+    background: linear-gradient(to right, #FF57C3 0%, #8244FF 100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    padding: 70px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+form div {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin: 10px 0px;
+}
+form div label {
+    font-size: 1.3rem;
+}
+.login input, .password input {
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.800);
+}
+.check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    width: 80%;
+}
+.check label {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.check input[type="checkbox"] {
+    animation: rotateAnimation 3s infinite ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.309);
+}
+.check input[type="checkbox"]:hover {
+    animation: 0s;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 16px;
+    margin-top: 15px;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.800);
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+input[type="submit"]:active {
+    background-color: rgba(180, 175, 175, 0.129);
+    transform: translateY(1px);
+    transition: background-color 0.3 ease;
+}
+footer {
+    height: 10%;
+}
+@keyframes rotateAnimation {
+
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg); 
+    }
+}
