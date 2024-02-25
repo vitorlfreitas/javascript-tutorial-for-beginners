@@ -1,7 +1,5 @@
 // Iterating Our Objects
 
-// Objects are not iterable, which means that we cannot use for of to iterate them. So what should we do?
-
 // Assign my obj
 const person = {
     name: 'Vitor',
@@ -10,8 +8,6 @@ const person = {
 
 // Review: Bracket notation 
 console.log(person['name']); // Vitor
-
-// We Have some Options
 
 // Using the for in
 for (let key in person) {

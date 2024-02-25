@@ -1,19 +1,20 @@
 // Lesson Object - Part 3
 
-// Objects are
-
 const person = {
     name: "John",
     age: 15,
 }
 
-// We can add new properties
+// We can add new properties dynamically
 person.gender = "Male";
+
+// We can alter the values dynamically
+person.name = "Vitor";
 
 console.log(person);
 // { name: 'John', age: 15, gender: 'Male' }
 
-// We can add anything, and also delete properties
+// We can delete properties
 delete person.gender;
 
 console.log(person);

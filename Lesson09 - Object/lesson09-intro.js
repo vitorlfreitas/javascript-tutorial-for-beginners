@@ -28,6 +28,7 @@ console.log(b); // 10
 /*
     However, if it is a reference value, it changes the output since a reference value does not set a new variable, they use the same memory space. In other words, it is just two or more variable referencing the same value
 */
+
 // Example 1 with Objects
 const person = { name: 'Andrew'};
 let name = person;
