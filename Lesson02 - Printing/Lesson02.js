@@ -21,22 +21,28 @@ console.log("Using double marks");
 
 // Concatenating strings and variables
 let name = 'Xname';
-let anyAge = 10505050;
+let anyAge = 23;
 console.log("Hi, I am " + name + ", I am " + anyAge); 
 
-// The awesome feature of the ECMA6 => Template String
+// The awesome feature of the ECMA6 => Template Literal
 console.log(`Hi, I am ${name}, I am ${anyAge}`);
 // Same result, less complexity
 
-/* OUTPUT
-    Info: Start process (10:21:05 AM)
-    Printing Strings
-    Any Name
-    1011
-    1030
-    Using simple marks
-    Using double marks
-    Hi, I am Xname, I am 10505050 
-    Hi, I am Xname, I am 10505050   
-    Info: End process (10:21:05 AM)
-*/
+// We can do more!
+
+// Using '' or break lines before the Template Literal
+let introduction = "Hello,\n\nMy name is \"Vitor\", I am " + anyAge + " years old\n\nBucket list:\n=> Macbook pro\n=> Go to X";
+console.log(introduction); // Very ugly
+
+console.log();
+// Same result, or even better
+let introduction2 = 
+`Hello,
+
+My name is 'Vitor', I am ${anyAge} years old
+
+Bucket list:
+=> Macbook
+=> Go to X`;
+
+console.log(introduction2);
