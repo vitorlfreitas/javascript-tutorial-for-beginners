@@ -46,8 +46,21 @@
 
     */
 
+// Example 1
 const arr = [1, 2, 3, 4]
 const obj = { animal: 'dog' };
 const copy = {...arr, ...obj};
 console.log(copy); 
 /* Output: { '0': 1, '1': 2, '2': 3, '3': 4, animal: 'dog' } */
+
+// Example 2
+const nums = [1, 2, 3];
+const anotherNums = [5, 6, 7];
+const combined = [...nums, 4, ...anotherNums, 'A']
+console.log(combined);
+/* Output:
+[
+    1, 2, 3, 4,
+    5, 6, 7, 'A'
+]
+*/
