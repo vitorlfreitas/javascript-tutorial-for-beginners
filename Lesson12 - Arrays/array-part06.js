@@ -11,13 +11,12 @@ initialValue: The initial value of the accumulator. It's optional and if not pro
 
 const numbers = [1, 2, 3, 4, 5];
 
-const sum = numbers.reduce(function (accumulator, element) {
-    return accumulator + element;
+const sum = numbers.reduce(function (acc, currentElement) {
+    return acc + currentElement;
 }, 0); // Initial Value
 
 /* It's important to note that you can use the reduce() method to perform a variety of reduction operations, such as finding the maximum value, minimum value, calculating the average, concatenating strings, etc. It all depends on the reduction function you provide as an argument to the reduce() method. Make sure the reduction function is consistent with the type of operation you want to perform.
 */
-
 
 console.log(sum); // Result: 15
 
