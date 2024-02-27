@@ -25,3 +25,14 @@ myGrades.pop();
 // Removes the first element
 myGrades.shift();
 //  [8, 7, 4.5]
+
+//          *** Removing all the Elements ***
+
+// 1° Way - Fastest Way:
+//myGrades.length = 0;
+
+// 2° Way - Not Recommended :
+for (let i = myGrades.length; i > 0; i--) {
+    myGrades.pop();
+}
+console.log(myGrades);

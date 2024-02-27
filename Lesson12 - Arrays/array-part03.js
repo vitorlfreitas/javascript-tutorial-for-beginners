@@ -31,6 +31,12 @@ arrayFruits.splice(2, 0, 'Strawberry', 'Peach');
 
 console.log(arrayFruits); // ['Apple', 'Banana', 'Strawberry', 'Peach', 'Orange']
 
+// Emptying an Array
+// We can use the splice method to empty an array
+const arrayToBeEmpty = [1, 2, 3, 4, 5, 6, 4];
+arrayToBeEmpty.splice(0); // Removes all elements
+console.log(arrayToBeEmpty); // []
+
 
 /*          *** Slice ***
     The slice() method in JavaScript is used to create a copy of a portion of an existing array. It does not modify the original array but returns a new array containing the selected elements.
