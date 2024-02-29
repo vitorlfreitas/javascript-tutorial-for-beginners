@@ -33,8 +33,48 @@ word = "New word";
 
 // CPF = "123456"; // If you run this script, you get an error message "TypeError: Assignment to constant variable."
 
+/*
+    * We can also assign a variable with the "var" keyword, but it is not recommended to use.  
+    * Variables declared with 'var' keyword are a function-scoped. It means that they can be accessed out of the scope that they have been assigned.
+    * It happens because the var variables are hoisted when the programming is running. If you assign a var variable in a if statement or for, in the global scope, when you run this code, the variable will go to the top of the scope, so it has access anywhere within the scope
+    * Hoisting is the action to hoist to the top of the scope when the program is initialized.
+    * They are separated in function or global scope. If you assign a var within a function, it will be acessible anywhere within the function, and if it is in a global scope, it will be accessible anywhere. 
+    * var also allows us to re-declare the same variable, which means that is easier to lose data.
 
-// Others type in JavaScript
+*/
+
+person1 = "John";
+
+var person1;
+
+console.log(person1);
+
+// If you run this code above, any error will be thrown.
+
+person2 = 'Anna';
+
+let person2;
+
+console.log(person2);
+
+// If you try this code, you will get this message:
+// ReferenceError: Cannot access 'person2' before initialization
+
+if (true) {
+    var acessibleVariable = 'abc';
+}
+// We can access the variable inside the if scope
+console.log(acessibleVariable);
+
+// Re-declaring the acessibleVariable
+var acessibleVariable = false;
+
+console.log(acessibleVariable);
+
+// You cannot do the same with the let variable. Therefore, use always let to assign variables!
+
+
+// Others type in JavaScript, we will cover in details in the next lessons
 
 let undefinedNull = undefined;
 let nullValue = null;
